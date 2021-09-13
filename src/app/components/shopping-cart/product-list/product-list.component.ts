@@ -14,10 +14,10 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.productService.getproducts());
-   //  this.productList= this.productService.getproducts(); for static data
-   this.productService.getproducts().subscribe((products) => {
-   this.productList = products;
-   })
+   this.productList= this.productService.getproducts(); //for static data
+  //  this.productService.getproducts().subscribe((products) => {
+  //  this.productList = products;
+  // })
   }
 
 }
